@@ -1,10 +1,37 @@
 <main class="main">
-  <div class="content-wrapper">
+  <p>
+    <mat-toolbar>
+      <button mat-icon-button (click)="drawer.toggle()" class="example-icon"
+        aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>My App</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+  </p>
 
-    <section class="content">
-      <router-outlet></router-outlet>
-    </section>
-  </div>
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <mat-sidenav-container class="example-container">
+        <mat-sidenav mode="side" opened>
+          <mat-nav-list>
+            <a mat-list-item routerLink="/home">Home</a>
+            <a mat-list-item routerLink="/about">About</a>
+            <a mat-list-item routerLink="/contact">Contact</a>
+          </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+          <router-outlet></router-outlet>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+    </mat-drawer>
+  </mat-drawer-container>
 </main>
 
 
