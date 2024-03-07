@@ -1,5 +1,5 @@
 <main class="main">
-  <p>
+  <mat-drawer-container class="example-container" autosize>
     <mat-toolbar>
       <button mat-icon-button (click)="drawer.toggle()" class="example-icon"
         aria-label="Example icon-button with menu icon">
@@ -14,9 +14,8 @@
         <mat-icon>share</mat-icon>
       </button>
     </mat-toolbar>
-  </p>
 
-  <mat-drawer-container class="example-container" autosize>
+
     <mat-drawer #drawer class="example-sidenav" mode="side">
       <mat-sidenav-container class="example-container">
         <mat-sidenav mode="side" opened>
