@@ -1,85 +1,53 @@
-*,
-*:before,
-*:after {
+* {
   box-sizing: border-box;
-}
-
-body {
-  margin: 1rem;
-  font-family: 'Open Sans', 'sans-serif';
-  background-color: #fff;
-  color: #444;
-}
-
-h1,
-p {
-  margin: 0 0 1em 0;
 }
 
 .wrapper {
   max-width: 940px;
-  margin: 0 20px;
+  margin: 0 auto;
+}
+
+.wrapper>div {
+  border: 2px solid rgb(233 171 88);
+  border-radius: 5px;
+  background-color: rgb(233 171 88 / 50%);
+  padding: 1em;
+  color: #d9480f;
+}
+
+.wrapper {
   display: grid;
-  grid-gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
 }
 
-@media screen and (min-width: 500px) {
-
-  /* no grid support? */
-  .sidebar {
-    float: left;
-    width: 19.1489%;
-  }
-
-  .content {
-    float: right;
-    width: 79.7872%;
-  }
-
-  .wrapper {
-    margin: 0 auto;
-    grid-template-columns: 1fr 3fr;
-  }
-
-  .header,
-  .footer {
-    grid-column: 1 / -1;
-    /* needed for the floated layout */
-    clear: both;
-  }
-
+.logo {
+  grid-column: 1 / 2;
+  grid-row: 1;
 }
 
-.wrapper>* {
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
-  /* needed for the floated layout*/
-  margin-bottom: 10px;
+.content {
+  grid-column: 2 / 6;
+  grid-row: 1 / 4;
 }
 
-.btn {
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  cursor: pointer;
-  display: inline-block;
-  margin: 10px 0;
-  text-decoration: none;
-  transition: background-color 0.3s;
-
-  &:hover {
-    background-color: #555;
-  }
+.side {
+  grid-column: 1 / 1;
+  grid-row: 2 / 5;
 }
 
+.footr1 {
+  grid-column: 2;
+  grid-row: 4;
+}
 
-/* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
-@supports (display: grid) {
-  .wrapper>* {
-    width: auto;
-    margin: 0;
-  }
+.footr2 {
+  grid-column: 3 / 5;
+  grid-row: 4;
+}
+
+.footr3 {
+  grid-column: 5;
+  grid-row: 4;
 }
