@@ -5,7 +5,7 @@
 }
 
 body {
-  margin: 40px;
+  margin: 1rem;
   font-family: 'Open Sans', 'sans-serif';
   background-color: #fff;
   color: #444;
@@ -59,6 +59,22 @@ p {
   /* needed for the floated layout*/
   margin-bottom: 10px;
 }
+
+.btn {
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px 0;
+  text-decoration: none;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #555;
+  }
+}
+
 
 /* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
 @supports (display: grid) {
