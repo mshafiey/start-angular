@@ -3,7 +3,7 @@
 }
 
 .wrapper {
-  max-width: 940px;
+  max-width: auto;
   margin: 0 auto;
 }
 
@@ -17,7 +17,8 @@
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(auto , 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
@@ -28,13 +29,13 @@
 }
 
 .content {
-  grid-column: 2 / 6;
+  grid-column: 2 / 12;
   grid-row: 1 / 4;
 }
 
 .side {
   grid-column: 1 / 1;
-  grid-row: 2 / 5;
+  grid-row: 2 / 8;
 }
 
 .footr1 {
@@ -43,11 +44,13 @@
 }
 
 .footr2 {
-  grid-column: 3 / 5;
+  grid-column: 3 / 11;
   grid-row: 4;
 }
 
 .footr3 {
-  grid-column: 5;
+  grid-column: 11;
   grid-row: 4;
 }
+
+
