@@ -5,6 +5,7 @@ import { NavComponent } from './layout/nav/nav.component';
 import { WidecardComponent } from './component/widecard/widecard.component';
 import { TinycardComponent } from './component/tinycard/tinycard.component';
 import { BigcardComponent } from './component/bigcard/bigcard.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ import { BigcardComponent } from './component/bigcard/bigcard.component';
     WidecardComponent,
     TinycardComponent,
     BigcardComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
