@@ -1,24 +1,4 @@
-<div class="layout-wrapper layout-content-navbar">
-  <div class="layout-container">
-    <app-aside> </app-aside>
-
-    <div class="layout-page">
-
-      <app-nav> </app-nav>
-
-      <div class="content-wrapper">
-
-        <app-dashboard></app-dashboard>
-
-        <app-footer></app-footer>
-
-        <!-- <div class="content-backdrop fade"></div> -->
-      </div>
-    </div>
-  </div>
-
-  <!-- <div class="layout-overlay layout-menu-toggle"></div> -->
+<div>
+  <router-outlet></router-outlet>
+  <app-responsive-helper></app-responsive-helper>
 </div>
-
-
-<router-outlet />

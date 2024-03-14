@@ -1,29 +1,17 @@
 import { Component } from '@angular/core';
+import { ThemeService } from './core/services/theme.service';
 import { RouterOutlet } from '@angular/router';
-import { AsideComponent } from './layout/aside/aside.component';
-import { NavComponent } from './layout/nav/nav.component';
-import { WidecardComponent } from './component/widecard/widecard.component';
-import { TinycardComponent } from './component/tinycard/tinycard.component';
-import { BigcardComponent } from './component/bigcard/bigcard.component';
-import { FooterComponent } from './layout/footer/footer.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-
+import { NgClass } from '@angular/common';
+import { ResponsiveHelperComponent } from './shared/components/responsive-helper/responsive-helper.component';
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [
-    RouterOutlet,
-    AsideComponent,
-    NavComponent,
-    WidecardComponent,
-    TinycardComponent,
-    BigcardComponent,
-    FooterComponent,
-    DashboardComponent,
-  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  styleUrls: ['./app.component.scss'],
+  standalone: true,
+  imports: [NgClass, RouterOutlet, ResponsiveHelperComponent],
 })
 export class AppComponent {
-  title = 'start';
+  title = 'GM Tools';
+
+  constructor(public themeService: ThemeService) {}
 }

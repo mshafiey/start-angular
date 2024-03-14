@@ -1,27 +1,34 @@
-# Start
+# Angular 17 Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+Angular 17 project.
 
-## Development server
+## Prerequisites
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Before getting started, make sure you have the following installed:
 
-## Code scaffolding
+- Node.js (version 20^)
+- Angular CLI (version 17^)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+1. Clone the repository:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+git clone Project URL
+```
 
-## Running unit tests
+2. Install the dependencies:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+npm install
+```
 
-## Running end-to-end tests
+3. Start the development server:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+ng serve
+```
 
-## Further help
+4. Open your browser and navigate to `http://localhost:4200`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Directory Structure
