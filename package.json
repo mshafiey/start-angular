@@ -5,7 +5,7 @@
   "description": "GM Tools is a web application that allows you to manage your games and campaigns.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luciano-work/angular-tailwind.git"
+    "url": ""
   },
   "keywords": [
     "angular",
