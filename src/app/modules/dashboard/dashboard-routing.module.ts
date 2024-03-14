@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 import { TestComponent } from './pages/test/test.component';
 import { AboutComponent } from './pages/about/about.component';
+import { PlayersComponent } from './pages/players/players.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,7 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'nfts', pathMatch: 'full' },
       { path: 'test', component: TestComponent },
+      { path: 'players', component: PlayersComponent },
       { path: 'about', component: AboutComponent },
       { path: '**', redirectTo: 'error/404' },
     ],

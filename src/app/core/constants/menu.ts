@@ -24,6 +24,12 @@ export class Menu {
             { label: 'Sign in', route: '/dashboard' },
           ],
         },
+        {
+          icon: 'assets/icons/heroicons/outline/lock-closed.svg',
+          label: 'Pleyers',
+          route: '/pleyers',
+          children: [{ label: 'Player List', route: '/dashboard/players' }],
+        },
       ],
     },
   ];
